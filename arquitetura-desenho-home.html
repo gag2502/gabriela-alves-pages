@@ -42,7 +42,7 @@ The above copyright notice and this permission notice shall be included in all c
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg bg-info">
     <div class="container">
-        <a class="navbar-brand" href="#">Arquitetura e Desenho de Software</a>
+        <a class="navbar-brand" href="arquitetura-desenho-home.html">Arquitetura e Desenho de Software</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-info" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar"></span>
             <span class="navbar-toggler-bar"></span>
@@ -55,23 +55,22 @@ The above copyright notice and this permission notice shall be included in all c
                 </li>
                 <li class="nav-item">
                     <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="dropdownMenuButton" href="#pk" role="button" aria-haspopup="true" aria-expanded="false">Padrões Arquiteturais</a>
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="dropdownMenuButton1" href="#pk" role="button" aria-haspopup="true" aria-expanded="false">Padrões Arquiteturais</a>
                         <ul class="dropdown-menu dropdown-info" aria-labelledby="dropdownMenuButton">
                             <li class="dropdown-header">Arquiteturas de Software</li>
-                            <a class="dropdown-item" href="#pk">Arquitetura em camadas (Layered pattern)</a>
-                            <a class="dropdown-item" href="#pk">Arquitetura cliente-servidor (Client-server pattern)</a>
-                            <a class="dropdown-item" href="#pk">Arquitetura MVC (Model-view-controller pattern)</a>
-                            <a class="dropdown-item" href="#pk">Arquitetura de microsserviços (Microservices pattern)</a>
+                            <a class="dropdown-item disabled" href="#pk">Arquitetura em camadas (Layered pattern)</a>
+                            <a class="dropdown-item disabled" href="#pk">Arquitetura cliente-servidor (Client-server pattern)</a>
+                            <a class="dropdown-item disabled"  href="#">Arquitetura MVC (Model-view-controller pattern)</a>
+                            <a class="dropdown-item" href="arquitetura-desenho-microservice.html">Arquitetura de microsserviços (Microservices pattern)</a>
                         </ul>
                     </div>
                 </li>
                 <li class="nav-item">
                     <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="dropdownMenuButton" href="#pk" role="button" aria-haspopup="true" aria-expanded="false">Padrões de projeto</a>
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="dropdownMenuButton2" href="#pk" role="button" aria-haspopup="true" aria-expanded="false">Padrões de projeto</a>
                         <ul class="dropdown-menu dropdown-info" aria-labelledby="dropdownMenuButton">
                             <li class="dropdown-header">Padrões de projeto</li>
-                            <a class="dropdown-item" href="#pk">Apapter</a>
-
+                            <a class="dropdown-item disabled" href="#pk">Adapter</a>
                         </ul>
                     </div>
                 </li>
@@ -80,31 +79,63 @@ The above copyright notice and this permission notice shall be included in all c
     </div>
 </nav>
 <!-- End Navbar -->
+
 <div class="main">
     <div class="section section-buttons">
         <div class="container">
             <div class="title">
-                <a name="bagagemTeorica"><h2><i class="nc-icon nc-settings"></i> Arquitetura e Desenho de Software</h2></a>
+                <a name="bagagemTeorica"><h2><i class="nc-icon nc-settings"></i> Arquitetura e Desenho de Software</h2>
+                </a>
             </div>
-            <h3>Conceito sobre Arquitetura de Software:</h3>
-            <h4> Além da escolha dos algoritmos e estruturas de dados, a
-                arquitetura envolve: decisões sobre as estruturas que
-                formarão o sistema, controle, protocolos de comunicação,
-                sincronização e acesso a dados, atribuição de funcionalidade a
-                elementos do sistema, distribuição física dos elementos
-                escalabilidade e desempenho e outros atibutos de qualidade; e
-                seleção de alternativas de projeto.</h4>
-            <h4 style="font-weight: bold"> M. Shaw, D. Garlan; Software Architecture. Perspectives on an Emerging
-                Discipline, Prentice Hall, 1996.</h4>
-            <h4 style="font-weight: bold"> D. Garlan and Mary Shaw. An introduction to software architecture.
-                Technical Report- CMU-CS-94166,Carnegie Mellon University, January 1994.</h4>
+            <div class="row">
+                <div class="col-2 float-left">
+                    <div class="nav-tabs-navigation">
+                        <div class="nav-tabs-wrapper">
+                            <ul class="nav flex-column" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#arquitetura" role="tab">Arquitetura</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#desenho" role="tab">Desenho</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 float-right">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="arquitetura" role="tabpanel">
+                            <h3><b>Conceito sobre Arquitetura de Software:</b></h3>
+                            <h4 data-toggle="popover" data-placement="top"
+                                data-html="true"
+                                data-content="<b>M. Shaw, D. Garlan</b>; Software Architecture. Perspectives on an Emerging Discipline,<br/> Prentice Hall, 1996;<br/>
+                <b>D. Garlan and Mary Shaw</b>. An introduction to software architecture.
+                Technical Report- CMU-CS-94166,Carnegie Mellon University, January 1994."> Além da escolha dos
+                                algoritmos e estruturas de dados, a
+                                arquitetura envolve: decisões sobre as estruturas que
+                                formarão o sistema, controle, protocolos de comunicação,
+                                sincronização e acesso a dados, atribuição de funcionalidade a
+                                elementos do sistema, distribuição física dos elementos
+                                escalabilidade e desempenho e outros atibutos de qualidade; e
+                                seleção de alternativas de projeto.</h4>
+                        </div>
+                        <div class="tab-pane" id="desenho" role="tabpanel">
+                            <h3><b>Conceito sobre Padrões de Projeto:</b></h3>
+                                <h4 data-toggle="popover" data-placement="top"
+                                    data-html="true"
+                                    data-content="Apostila K19: <a href='https://pt.slideshare.net/KIQMoretto/k19-k51designpatternsemjava-15677879' target='_blank' >Acesse aqui</a>">
+                                    Um padrão de projeto é uma solução consolidada para um problema recorrente no
+                                    desenvolvimento
+                                    e manutenção de software orientado a objetos</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <h3>Conceito sobre Padrões de Projeto:</h3>
-            <h4> Um padrão de projeto é uma solução consolidada para um problema recorrente no desenvolvimento
-            e manutenção de software orientado a objetos</h4>
-            <h4 style="font-weight: bold"> Apostila K19: <a style="font-weight: bold" href="https://pt.slideshare.net/KIQMoretto/k19-k51designpatternsemjava-15677879">Acesse aqui</a></h4>
 
-            <!--   Core JS Files   -->
+
+
+<!--   Core JS Files   -->
             <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
             <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
             <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
@@ -151,6 +182,10 @@ The above copyright notice and this permission notice shall be included in all c
         </div>
     </div>
 </div>
+<footer style=" position:absolute;bottom:0;width:100%;" class="footer">
+    <p style="text-align: center"> Versão 1.0.0 -  <script>
+        document.write(new Date().getFullYear())
+    </script></p>
+</footer>
 </body>
-
 </html>
